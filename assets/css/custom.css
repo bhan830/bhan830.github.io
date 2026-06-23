@@ -22,10 +22,17 @@
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
-  gap: 6px;
   align-items: center;
 }
 
 .grid.md\:grid-cols-2.xl\:grid-cols-3 p.text-sm br {
-  display: none !important;
+  content: '–' !important;
+  display: inline !important;
+  margin: 0 4px;
+  color: #9ca3af;
+}
+
+.grid.md\:grid-cols-2.xl\:grid-cols-3 p.text-sm br::after {
+  content: '–';
+  color: #9ca3af;
 }
