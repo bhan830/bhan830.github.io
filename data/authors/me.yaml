@@ -31,12 +31,11 @@ interests:
   - Retrieval-Augmented Generation
   - Clinical AI Deployment
 education:
-  - layout: List
   - degree: Master of Applied Bioengineering
     institution: University of Washington
     start: 2024-09-01
     end: 2026-06-30
-    summary: GPA 3.96 · Annual Dean's List
+    summary: GPA 3.94 · Annual Dean's List
   - degree: "Bachelor of Science - Bioengineering: Data Science"
     institution: University of Washington
     start: 2020-09-01
