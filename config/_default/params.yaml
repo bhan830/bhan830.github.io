@@ -49,7 +49,7 @@ hugoblox:
       background: ""
       foreground: ""
       header:
-        background: ""
+        background: "#0d3d56"
         foreground: ""
       footer:
         background: ""
