@@ -38,3 +38,5 @@ social:
     link: https://github.com/bhan830
 
 ---
+
+I am a biomedical engineer at the University of Washington specializing in AI-powered systems for clinical applications.
