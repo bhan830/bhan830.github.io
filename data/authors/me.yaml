@@ -14,9 +14,9 @@ status:
 role: Biomedical AI Engineer
 bio: |
   I am a biomedical engineer specializing in AI-powered systems that integrate multimodal healthcare data across literature, structured databases, and medical imaging. My work involves developing and evaluating scalable machine learning and LLM-based algorithms to transform complex medical data into actionable and accessible information for clinicians. 
-affiliations:
-  - name: University of Washington
-    url: https://www.washington.edu/
+# affiliations:
+#   - name: University of Washington
+#     url: https://www.washington.edu/
 links:
   - icon: at-symbol
     url: mailto:benjaminhan830@gmail.com
