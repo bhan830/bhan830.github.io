@@ -13,7 +13,7 @@ sections:
         folders:
           - projects
     design:
-      view: article-grid
+      view: card
       fill_image: false
       columns: 2
       show_date: false
