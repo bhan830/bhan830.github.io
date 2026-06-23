@@ -33,18 +33,16 @@ interests:
 education:
   - degree: Master of Applied Bioengineering (MAB)
     institution: University of Washington
-    start: 2025-09-01
-    end: 2026-06-01
+    start: September 2025 - June 2026
     summary: GPA 3.94 · Annual Dean's List
   - degree: "Bachelor of Science - Bioengineering: Data Science"
     institution: University of Washington
-    start: 2021-09-01
-    end: 2025-06-01
+    start: September 2021 - June 2025
     summary: GPA 3.47 · Minor in Applied Mathematics
 experience:
   - role: Quality Assurance Intern
     org: Bio-Therapeutic
-    start: 2024-09-01
+    start: September 2024
     summary: |
       -   Increased operational visibility across 1000+ purchasing orders and supply records by developing three interactive Tableau dashboards for inventory and procurement tracking
       -   Reduced manual data entry effort and improved workflow by automating customer service logging workbooks
@@ -53,7 +51,7 @@ experience:
 
   - role: Lead Teaching Assistant
     org: UW Bioengineering Department
-    start: 2024-01-01
+    start: January 2024 - June 2026
     summary: |
       -   Strengthened student understanding of MATLAB programming and bioengineering design concepts by working with instructors to develop course materials, revise online modules, and lead undergraduate lectures
       -   Supported academic success through holding 150+ office hours and mentoring eight student engineering teams
