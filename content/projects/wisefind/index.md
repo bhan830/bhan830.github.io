@@ -6,7 +6,7 @@ tags:
   - RAG
   - LLM Evaluation
   - Prompt Engineering
-date: September 2025
+date: 2025-09-01
 ---
 
 WiseFind is a Retrieval-Augmented Generation platform that enables clinicians to query neurotrauma literature in natural language.
