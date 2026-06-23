@@ -14,19 +14,18 @@
   }
 }
 
+.grid.md\:grid-cols-2.xl\:grid-cols-3 {
+  grid-template-columns: 1fr 1fr !important;
+}
+
 .grid.md\:grid-cols-2.xl\:grid-cols-3 p.text-sm {
-  display: flex;
-  gap: 4px;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 6px;
   align-items: center;
 }
 
 .grid.md\:grid-cols-2.xl\:grid-cols-3 p.text-sm br {
-  content: '';
-  display: inline;
-  margin: 0 4px;
-}
-
-.grid.md\:grid-cols-2.xl\:grid-cols-3 p.text-sm br::after {
-  content: '–';
-  color: #9ca3af;
+  display: none !important;
 }
