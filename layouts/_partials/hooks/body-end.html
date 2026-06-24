@@ -1,0 +1,14 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.grid').forEach(function(grid) {
+      if (grid.classList.contains('md:grid-cols-2')) {
+        grid.querySelectorAll('p.text-sm.mt-2').forEach(function(p) {
+          var br = p.querySelector('br');
+          if (br) {
+            br.replaceWith(document.createTextNode(' – '));
+          }
+        });
+      }
+    });
+  });
+</script>
