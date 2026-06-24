@@ -60,7 +60,7 @@ experience:
       -   Supported academic success through holding 150+ office hours and mentoring eight student engineering teams
 
 skills:
-  - name: Programming
+  - name: Programming Languages
     items:
       - label: Python
         level: 5
@@ -70,13 +70,14 @@ skills:
         level: 2
       - label: R
         level: 3
-  - name: AI / ML
+  - name: AI / Machine Learning
     items:
       - label: PyTorch
         level: 5
+      - label: TensorFlow
+        level: 3
       - label: RAG Pipelines
         level: 5
       - label: LLM Evaluation
         level: 5
-      - label: TensorFlow
-        level: 3
+
