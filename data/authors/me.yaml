@@ -67,7 +67,7 @@ skills:
       - label: MATLAB
         level: 4
       - label: SQL
-        level: 4
+        level: 2
       - label: R
         level: 3
   - name: AI / ML
@@ -79,4 +79,4 @@ skills:
       - label: LLM Evaluation
         level: 5
       - label: TensorFlow
-        level: 4
+        level: 3
