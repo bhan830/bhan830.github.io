@@ -69,10 +69,14 @@ skills:
       - label: Python
         level: 5
       - label: MATLAB
-        level: 4
+        level: 5
       - label: SQL
-        level: 3
+        level: 2
       - label: R
+        level: 4
+      - label: Java
+        level: 3
+      - label: Visual Basic for Applications (VBA)
         level: 3
   - name: AI / Machine Learning
     items:
@@ -97,6 +101,8 @@ skills:
       - label: LabVIEW
         level: 4
       - label: COMSOL Multiphysics
+        level: 3
+      - label: Onshape
         level: 3
       - label: SolidWorks
         level: 2
