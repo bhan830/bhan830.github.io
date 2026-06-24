@@ -56,6 +56,6 @@
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     max-width: 75% !important;
     gap: 3.5rem !important;
-    margin-top: 1.5rem !important;
+    margin-top: 1.25rem !important;
   }
 }
