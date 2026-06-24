@@ -26,10 +26,16 @@ links:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/benjaminhan830/
 interests:
-  - Large Language Models
+  - Machine Learning
+  - Artificial Intelligence
+  - Computer Vision
   - Medical Imaging
-  - Retrieval-Augmented Generation
-  - Clinical AI Deployment
+  - Natural Language Processing
+  - Data Visualization
+  - Statistical Modeling
+  - Healthcare Analytics
+  - Scientific Computing
+  - Technical Mentorship
 education:
   - degree: Master of Applied Bioengineering (MAB)
     institution: University of Washington
