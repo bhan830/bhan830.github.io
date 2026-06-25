@@ -87,7 +87,7 @@ section.hbb-section {
    align-self: flex-start anchors the item to the container's left edge so the
    calc lands correctly even when the parent uses items-center. */
 #experience h2 {
-  background: linear-gradient(to right, transparent, var(--color-primary-500) 15%, var(--color-primary-500) 85%, transparent);
+  background: linear-gradient(to bottom, transparent, var(--color-primary-500) 25%, var(--color-primary-500) 75%, transparent);
   color: white;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
@@ -101,7 +101,7 @@ section.hbb-section {
 #skills .mb-6.text-3xl,
 #projects .mb-6.text-3xl {
   align-self: flex-start;
-  background: linear-gradient(to right, transparent, var(--color-primary-500) 15%, var(--color-primary-500) 85%, transparent);
+  background: linear-gradient(to bottom, transparent, var(--color-primary-500) 25%, var(--color-primary-500) 75%, transparent);
   color: white;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
