@@ -76,13 +76,24 @@ section.hbb-section {
   scroll-margin-top: var(--navbar-height, 64px);
 }
 
-/* Full-width colored bar behind each section title, tracks active theme */
-section.hbb-section h2 {
+/* Remove section top padding so the title bar snaps to navbar bottom on tab click */
+section.hbb-section:not(.blox-resume-biography-3) {
+  padding-top: 0 !important;
+}
+
+/* Full-width colored title bar, tracks active theme — biography section excluded.
+   calc(-50vw + 50%) breaks out of any centered container regardless of max-width. */
+section.hbb-section:not(.blox-resume-biography-3) h2,
+#skills .mb-6.text-3xl,
+#projects .mb-6.text-3xl {
   background-color: var(--color-primary-500);
   color: white;
-  width: 100%;
-  padding: 1rem 1.5rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
+  padding: 1rem 2rem;
   margin-bottom: 1.5rem;
+  text-align: center;
   letter-spacing: 0.05em;
 }
 
