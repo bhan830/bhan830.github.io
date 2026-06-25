@@ -50,15 +50,20 @@
   padding-bottom: 25px !important;
 }
 
-/* Extend gradient mesh across the full page */
+/* Extend gradient mesh across the full page, remove per-section white backgrounds */
 body {
+  background-color: var(--hb-color-background) !important;
   background-image: linear-gradient(
     to bottom right,
     color-mix(in srgb, var(--color-primary-500) 20%, transparent),
     transparent 50%,
     color-mix(in srgb, var(--color-secondary-500) 20%, transparent)
-  );
-  background-attachment: fixed;
+  ) !important;
+  background-attachment: fixed !important;
+}
+
+.home-section-bg {
+  background-color: transparent !important;
 }
 
 /* Adjust screen snapping to account for navbar height */
