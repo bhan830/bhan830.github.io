@@ -34,6 +34,7 @@ sections:
       is_education_first: false
 
   - block: resume-skills
+    id: skills
     content:
       title: Skills and Qualifications
       username: me
