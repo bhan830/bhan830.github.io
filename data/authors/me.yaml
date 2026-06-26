@@ -90,6 +90,7 @@ experience:
       - Developed a VBA-based engineering records management tool that organized and standardized 500+ piping data entries, improving data searchability for engineering teams
       - Designed Excel automation tools to perform pump curve calculations and hydraulic analyses, reducing manual computation time and improving the accuracy and reproducibility of engineering evaluations
       - Annotated pump station schematics, creating structured engineering records that improved document traceability and facilitated future maintenance and infrastructure planning
+
 skills:
   - design:
         view: article-grid
