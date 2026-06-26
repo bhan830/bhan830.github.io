@@ -50,16 +50,16 @@ education:
     end: June 2025
     summary: GPA 3.47 · Minor in Applied Mathematics
 experience:
-  - role: Quality Assurance Intern
+  - role: Jr. Quality Engineer
     org: Bio-Therapeutic
     start: September 2024
     summary: |
       -   Increased operational visibility across 1000+ purchasing orders and supply records by developing three interactive Tableau dashboards for inventory and procurement tracking
-      -   Reduced manual data entry effort and improved workflow by automating customer service logging workbooks
-      -   Supported quality management reporting by collecting and analyzing statistical client data for internal review
-      -   Conducted surveillance audits to ensure compliance with the Bio-Therapeutic Quality Management System
+      -   Reduced manual data entry effort and improved workflow by automating customer service logging workbooks and creating statistical reporting tools
+      -   Supported quality management reporting by collecting and analyzing statistical client data for internal management review
+      -   Conducted routine surveillance audits to ensure compliance with the Bio-Therapeutic Quality Management System
 
-  - role: Bioengineering Teaching Assistant
+  - role: Lead Teaching Assistant
     org: UW Bioengineering Department
     start: January 2024
     end: June 2026
@@ -67,19 +67,20 @@ experience:
       Teaching assistant for undergraduate Bioengineering courses, including BIOEN 217: Introduction to MATLAB Fundamentals and BIOEN 400: Fundamentals of Bioengineering Design. Supported students through lectures, office hours, grading, and project mentorship while collaborating with instructors to improve course materials and the student learning experience.
       - Mentored eight student design teams through quarter-long healthcare engineering projects, providing guidance on problem definition, research methods, solution development, and technical presentations (BIOEN 400).
       - Led instructional sessions on MATLAB programming, data analysis, and visualization for undergraduate bioengineering students (BIOEN 217).
-      - Held 150+ hours of office hours and one-on-one appointments to support student learning and troubleshoot coursework.
-      - Graded quizzes, homework assignments, and projects, providing timely and constructive feedback.
-      - Collaborated with instructors and teaching staff to develop course content and improve Canvas modules.
-      - Revised homework assignments, created instructional walkthroughs, and contributed resources to enhance student understanding.
+      - Held 150+ hours of office hours and one-on-one appointments to support student learning and troubleshoot coursework
+      - Provided constructive feedback to students through grading quizzes, homework assignments, and projects
+      - Collaborated with teaching staff to develop course content and improve Canvas modules
+      - Revised homework assignments, created instructional walkthroughs, and contributed resources to enhance student understanding
 
   - role: Engineering Services Intern
     org: UW Facilities
     start: September 2024
     end: June 2025
     summary: | 
-      - Developed Python algorithms to streamline logging processes for engineering professionals
-      - Organized and logged data on UW building schematics and safety documents
-      - Established tagging procedures for metadata information to ensure database integrity
+      - Developed a Python script to automate document logging and metadata extraction, streamlining engineering workflows and reducing manual data entry
+      - Organized and maintained large structured datasets (190k+ records) of University of Washington building schematics, safety documents, and engineering records to improve data accessibility and consistency
+      - Established tagging procedures for metadata information to ensure database integrity, support efficient document retrieval, and maintain database quality
+      - Collaborated with engineering professionals to optimize document management processes and improve the efficiency of technical information retrieval
 
 skills:
   - design:
