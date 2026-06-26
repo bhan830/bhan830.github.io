@@ -64,8 +64,27 @@ experience:
     start: January 2024
     end: June 2026
     summary: |
-      -   Strengthened student understanding of MATLAB programming and bioengineering design concepts by working with instructors to develop course materials, revise online modules, and lead undergraduate lectures
-      -   Supported academic success through holding 150+ office hours and mentoring eight student engineering teams
+      Teaching assistant for a Fundamentals of Bioengineering Design class (BIOEN 400) at the University of Washington. The class is designed to teach junior Bioengineering students the engineering design process and methods for developing health technologies.
+      - Mentored eight teams of students throughout a quarter-long health project, providing guidance on defining a health problem, research methods, developing a solution, and presentation skills
+      - Collaborated with teaching staff to prepare course content and improve Canvas modules
+      - Graded weekly quizzes and homework assignments, providing feedback to students
+      - Assisted students during weekly office hours with instructor and teaching team
+
+      Teaching assistant for an Introduction to MATLAB Fundamentals class (BIOEN 217) at the University of Washington. The class is designed to teach freshman and sophomore students interested in Bioengineering how to use MATLAB for data analysis and visualization. 
+      - Led multiple lessons on MATLAB fundamentals through bi-weekly lectures 
+      - Participated in weekly team meetings to prepare course content and improve online Canvas modules
+      - Graded weekly quizzes and homework assignments, providing feedback to students
+      - Assisted students during weekly office hours and through scheduled appointments
+      - Rewrote homework assignments and delivered additional walkthrough announcements to help students understand course material and complete coursework punctually
+
+  - role: Engineering Services Intern
+    org: UW Facilities
+    start: September 2024
+    end: June 2025
+    summary: | 
+      - Developed Python algorithms to streamline logging processes for engineering professionals
+      - Organized and logged data on UW building schematics and safety documents
+      - Established tagging procedures for metadata information to ensure database integrity
 
 skills:
   - design:
