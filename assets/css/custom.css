@@ -73,7 +73,8 @@ html {
 
 /* scroll-margin-top removed: HugoBlox's hb-nav.js already sets scroll-padding-top
    on the root element from the real navbar height — adding it here doubles the offset. */
-section.hbb-section {
+section.hbb-section,
+#education {
   scroll-snap-align: start;
 }
 
