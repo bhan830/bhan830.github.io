@@ -13,8 +13,6 @@ tags:
 date: 2025-09-01
 ---
 
-## Demo
-
 {{< video src="demo.mp4" controls="yes" >}}
 
 WiseFind is an AI-powered clinical intelligence platform that integrates Retrieval-Augmented Generation (RAG) with large language models to help clinicians retrieve, analyze, and reason over neurotrauma literature and patient data. By grounding responses in authoritative medical sources, WiseFind supports evidence-based clinical decision-making while improving the efficiency of information retrieval.
