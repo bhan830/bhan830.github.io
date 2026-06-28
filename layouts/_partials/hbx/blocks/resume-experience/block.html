@@ -360,7 +360,7 @@
           {{ if reflect.IsSlice $courses_raw }}
           <div class="mt-4 pt-4 border-t border-gray-200 dark:border-white/10">
             <p class="text-sm font-semibold uppercase tracking-widest text-secondary-600 dark:text-secondary-400 mb-2">Relevant Courses</p>
-            <ul class="space-y-1 text-xs text-gray-600 dark:text-gray-400 list-disc list-inside">
+            <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-400 list-disc list-inside">
               {{ range $courses_raw }}<li>{{ . }}</li>{{ end }}
             </ul>
           </div>
