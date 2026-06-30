@@ -9,7 +9,7 @@ sections:
       username: me
       text: ''
       button:
-        text: View Resume
+        text: Download Resume
         url: uploads/resume.pdf
       headings:
         about: ''

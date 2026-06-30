@@ -11,6 +11,10 @@ tags:
   - Prompt Engineering
   - Synthetic Data Generation
 date: 2025-09-01
+institution: University of Washington
+affiliation: UW Department of Neurosurgery, Harborview Medical Center
+start_date: 2025-09-01
+end_date: ''
 ---
 
 <video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
