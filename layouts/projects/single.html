@@ -67,7 +67,7 @@
 
       {{/* Project metadata bar: institution, affiliation, duration — replaces the date/read-time row */}}
       {{ if or .Params.institution .Params.affiliation .Params.start_date }}
-      <div class="mt-5 mb-16 flex flex-col gap-3 text-lg text-gray-600 dark:text-gray-300">
+      <div class="mt-5 mb-16 flex flex-col gap-3 text-xl text-gray-600 dark:text-gray-300">
         {{ with .Params.institution }}
         <span class="inline-flex items-center gap-2.5">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary-600 dark:text-primary-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
