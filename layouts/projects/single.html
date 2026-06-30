@@ -37,7 +37,7 @@
         {{ end }}
       {{ end }}
 
-      <h1 class="{{ if $has_overlap_icon }}mt-12{{ else }}mt-2{{ end }} text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100" data-pagefind-meta="title" data-pagefind-body>
+      <h1 class="{{ if $has_overlap_icon }}mt-12{{ else }}mt-2{{ end }} text-5xl font-bold tracking-tight text-slate-900 dark:text-slate-100" data-pagefind-meta="title" data-pagefind-body>
         {{/* Inline icon before title if specified */}}
         {{ if $cover }}
           {{ $icon_config := .Params.cover.icon | default (dict) }}
@@ -66,7 +66,7 @@
       </h1>
 
       {{ with .Params.subtitle }}
-      <p class="mt-2 text-xl text-gray-500 dark:text-gray-400">{{ . }}</p>
+      <p class="mt-2 text-2xl text-gray-500 dark:text-gray-400">{{ . }}</p>
       {{ end }}
 
       {{/* Project metadata bar: institution, affiliation, duration — replaces the date/read-time row */}}
