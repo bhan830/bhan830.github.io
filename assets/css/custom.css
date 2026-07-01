@@ -83,6 +83,12 @@ section.hbb-section,
   padding-top: 0 !important;
 }
 
+/* tech-stack block adds py-16 to its outer container; zero the top half so the bar
+   appears flush at the section boundary, matching the experience bar behaviour. */
+#skills .max-w-6xl {
+  padding-top: 0 !important;
+}
+
 /* Full-width colored title bar, tracks active theme.
    calc(-50vw + 50%) breaks out of any centered container regardless of max-width.
    align-self: flex-start anchors the item to the container's left edge so the
