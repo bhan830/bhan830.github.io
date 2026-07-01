@@ -18,10 +18,6 @@ start_date: 2026-03-01
 end_date: 2026-06-30
 ---
 
-<video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
-  <source src="demo.mp4" type="video/mp4">
-</video>
-
 CareChorus is a local-first, Flutter-based healthcare companion app that helps patients and caregivers manage complex medical journeys. Its core AI pipeline ingests uploaded documents and photos (lab reports, discharge summaries, medication labels, imaging results) and runs them through a classify → extract → summarize flow across multiple LLMs (Claude Sonnet 4.5, GPT-5, GPT-5-mini) to populate a schema-driven record of medications, conditions, providers, and appointments — turning dense medical paperwork into structured, actionable data while keeping protected health information on-device. As eval infrastructure lead, I designed and built the testing and quality-assurance systems that validate this pipeline's accuracy before it ships to patients.
 
 ## Key Contributions
