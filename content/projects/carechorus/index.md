@@ -13,7 +13,7 @@ tags:
   - Structured Information Extraction
 date: 2026-03-01
 institution: University of Washington | Seattle, WA
-affiliation: University of Washington
+affiliation: University of Washington, CareChorus
 start_date: 2026-03-01
 end_date: 2026-06-30
 ---

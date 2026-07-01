@@ -113,10 +113,9 @@ section.hbb-section,
   letter-spacing: 0.05em;
 }
 
-/* Skills grid: 3 columns at md+, more room and breathing space between columns */
+/* Skills grid: 2x2 layout at md+, constrained to 75% width */
 @media (min-width: 768px) {
-  .grid.md\:grid-cols-2.lg\:grid-cols-3.items-start {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  #skills .grid.md\:grid-cols-2.items-start {
     max-width: 75% !important;
     gap: 3.5rem !important;
     margin-top: 1.25rem !important;

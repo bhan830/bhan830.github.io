@@ -36,7 +36,7 @@ sections:
       title: Skills and Qualifications
       username: me
     design:
-      columns: 3
+      columns: 2
 
   - block: collection
     id: projects

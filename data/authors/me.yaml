@@ -114,51 +114,35 @@ experience:
       - Annotated pump station schematics, creating structured engineering records that improved document traceability and facilitated future maintenance and infrastructure planning
 
 skills:
-  - design:
-        view: article-grid
-        fill_image: false
-        columns: 3
-  - name: Programming Languages
+  - name: Programming
     items:
       - label: Python
-        level: 5
       - label: MATLAB
-        level: 5
-      - label: SQL
-        level: 2
       - label: R
-        level: 4
-      - label: Java
-        level: 3
-      - label: Visual Basic for Applications
-        level: 3
-  - name: AI / Machine Learning
+      - label: SQL
+      - label: JavaScript
+
+  - name: AI & Machine Learning
     items:
       - label: PyTorch
-        level: 5
-      - label: TensorFlow
-        level: 3
       - label: RAG Pipelines
-        level: 5
-      - label: Synthetic Data Generation
-        level: 4
-      - label: Prompt Engineering
-        level: 4
       - label: LLM Evaluation
-        level: 5
-  - name: Engineering Tools / Software
+      - label: Prompt Engineering
+      - label: Synthetic Data Generation
+      - label: TensorFlow
+
+  - name: Data & Medical Imaging
     items:
-      - label: Fusion 360
-        level: 5
-      - label: AutoCAD
-        level: 4
-      - label: LabVIEW
-        level: 4
-      - label: COMSOL Multiphysics
-        level: 3
-      - label: Onshape
-        level: 3
-      - label: SolidWorks
-        level: 2
+      - label: OpenCV
+      - label: NumPy / pandas
+      - label: scikit-learn
+      - label: Tableau
+      - label: Medical Imaging
+
+  - name: Cloud & Infrastructure
+    items:
+      - label: AWS
+      - label: Git
+      - label: Linux
     
 
