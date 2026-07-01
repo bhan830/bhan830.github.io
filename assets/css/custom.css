@@ -91,7 +91,7 @@ section.hbb-section,
 
 /* Increase skills category title size (default text-xs = 12px is too small for uppercase labels) */
 #skills h3 {
-  font-size: 2rem !important;
+  font-size: 1.25rem !important;
 }
 
 /* Full-width colored title bar, tracks active theme.
