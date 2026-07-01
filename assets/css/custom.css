@@ -89,6 +89,11 @@ section.hbb-section,
   padding-top: 0 !important;
 }
 
+/* Increase skills category title size (default text-xs = 12px is too small for uppercase labels) */
+#skills h3 {
+  font-size: 1rem !important;
+}
+
 /* Full-width colored title bar, tracks active theme.
    calc(-50vw + 50%) breaks out of any centered container regardless of max-width.
    align-self: flex-start anchors the item to the container's left edge so the
