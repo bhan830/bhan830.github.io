@@ -30,13 +30,40 @@ sections:
       date_format: 'January 2006'
       is_education_first: false
 
-  - block: resume-skills
+  - block: tech-stack
     id: skills
     content:
       title: Skills and Qualifications
-      username: me
+      categories:
+        - name: Programming
+          items:
+            - name: Python
+            - name: MATLAB
+            - name: R
+            - name: SQL
+            - name: JavaScript
+        - name: AI & Machine Learning
+          items:
+            - name: PyTorch
+            - name: RAG Pipelines
+            - name: LLM Evaluation
+            - name: Prompt Engineering
+            - name: Synthetic Data Generation
+            - name: TensorFlow
+        - name: Data & Medical Imaging
+          items:
+            - name: OpenCV
+            - name: NumPy / pandas
+            - name: scikit-learn
+            - name: Tableau
+            - name: Medical Imaging
+        - name: Cloud & Infrastructure
+          items:
+            - name: AWS
+            - name: Git
+            - name: Linux
     design:
-      columns: 2
+      style: list
 
   - block: collection
     id: projects

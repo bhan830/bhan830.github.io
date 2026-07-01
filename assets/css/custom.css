@@ -99,7 +99,6 @@ section.hbb-section,
   letter-spacing: 0.05em;
 }
 
-#skills .mb-6.text-3xl,
 #projects .mb-6.text-3xl {
   align-self: flex-start;
   background-color: var(--color-primary-500);
@@ -113,81 +112,9 @@ section.hbb-section,
   letter-spacing: 0.05em;
 }
 
-/* Skills: centered 2x2 card grid */
 @media (min-width: 768px) {
-  #skills .grid.md\:grid-cols-2.items-start {
-    max-width: 75% !important;
-    gap: 1.5rem !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 1.25rem !important;
-    align-items: stretch !important;
-  }
-
-  /* Project cards: match the combined width of the skills grid (75vw) */
+  /* Project cards: match the width of the skills section */
   #projects .container.max-w-screen-lg {
     max-width: 75vw !important;
   }
-}
-
-/* Skills: card per category */
-#skills .grid .w-full {
-  background-color: white;
-  border-radius: 1rem;
-  border: 1px solid rgb(229, 231, 235);
-  padding: 1.75rem 2rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-}
-
-.dark #skills .grid .w-full {
-  background-color: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(24px);
-}
-
-#skills .grid .w-full:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
-  border-color: color-mix(in srgb, var(--color-primary-500) 50%, transparent);
-  transform: translateY(-2px);
-}
-
-/* Category title with primary accent underline */
-#skills .grid .w-full > div:first-child {
-  color: color-mix(in srgb, var(--color-primary-500) 80%, black) !important;
-  border-bottom: 2px solid color-mix(in srgb, var(--color-primary-500) 25%, transparent);
-  padding-bottom: 0.75rem;
-  margin-bottom: 1rem !important;
-}
-
-.dark #skills .grid .w-full > div:first-child {
-  color: color-mix(in srgb, var(--color-primary-500) 70%, white) !important;
-}
-
-/* Skill items: inline wrapping tags */
-#skills .skills-content {
-  display: inline !important;
-}
-
-#skills .skills-name {
-  display: inline-flex !important;
-  align-items: center;
-  padding: 0.2rem 0.65rem;
-  margin: 0.2rem 0.2rem 0.2rem 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border-radius: 0.375rem;
-  background-color: color-mix(in srgb, var(--color-primary-500) 10%, transparent);
-  color: color-mix(in srgb, var(--color-primary-500) 80%, black) !important;
-  border: 1px solid color-mix(in srgb, var(--color-primary-500) 20%, transparent);
-}
-
-.dark #skills .skills-name {
-  color: color-mix(in srgb, var(--color-primary-500) 70%, white) !important;
-}
-
-/* markdownify wraps plain text in <p> — keep it inline inside the tag */
-#skills .skills-name p {
-  display: inline;
-  margin: 0;
 }
