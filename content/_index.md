@@ -92,9 +92,9 @@ sections:
             - name: AutoCAD
               icon: brands/autocad
             - name: LabVIEW
-              icon: brands/labview
+              icon: custom/labview
             - name: COMSOL Multiphysics
-              icon: custom/comsol
+              icon: hero/beaker
             - name: Onshape
               icon: hero/cube
             - name: SolidWorks
