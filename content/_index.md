@@ -88,13 +88,13 @@ sections:
         - name: Engineering Software
           items:
             - name: Fusion 360
-              icon: devicon/fusion
+              icon: brands/autodesk
             - name: AutoCAD
               icon: brands/autocad
             - name: LabVIEW
               icon: brands/labview
             - name: COMSOL Multiphysics
-              icon: brands/comsol
+              icon: custom/comsol
             - name: Onshape
               icon: hero/cube
             - name: SolidWorks

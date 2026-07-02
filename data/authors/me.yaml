@@ -114,7 +114,7 @@ experience:
       - Annotated pump station schematics, creating structured engineering records that improved document traceability and facilitated future maintenance and infrastructure planning
 
 skills:
-  - name: Programming
+  - name: Programming Languages
     items:
       - label: Python
       - label: MATLAB
@@ -131,7 +131,7 @@ skills:
       - label: Synthetic Data Generation
       - label: TensorFlow
 
-  - name: Data & Health Informatics
+  - name: Data Science & Health Informatics
     items:
       - label: OpenCV
       - label: NumPy / pandas

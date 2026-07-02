@@ -20,7 +20,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: Skills and Qualifications
+      title: Skills and Expertise
       username: me
     design:
       columns: 3
