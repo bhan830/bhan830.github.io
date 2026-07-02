@@ -1,34 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 112 112" fill="none">
-  <!-- Main membrane/surface silhouette — based on the MATLAB logo shape -->
-  <path
-    d="M53,13
-       C57,11 62,10 65,10
-       C75,16 86,33 92,46
-       C93,53 88,62 84,63
-       L66,57
-       C60,57 56,60 50,67
-       C47,67 41,65 38,65
-       L37,74
-       C33,79 25,80 20,77
-       L5,69
-       C8,59 15,56 27,51
-       C32,48 35,45 37,39
-       C40,33 42,27 50,19
-       C52,15 52,14 53,13 Z"
-    stroke="currentColor"
-    stroke-width="4"
-    stroke-linejoin="round"
-    stroke-linecap="round"/>
-
-  <!-- Dashed contour curves across the surface (3-D effect) -->
-  <path d="M63,12 C72,23 84,41 90,58"
-    stroke="currentColor" stroke-width="2.5" stroke-dasharray="5,3" fill="none"/>
-  <path d="M57,14 C64,26 72,45 74,59"
-    stroke="currentColor" stroke-width="2.5" stroke-dasharray="5,3" fill="none"/>
-  <path d="M50,18 C55,30 62,48 63,62"
-    stroke="currentColor" stroke-width="2.5" stroke-dasharray="5,3" fill="none"/>
-
-  <!-- Shelf / shadow lines in the lower-left fold -->
-  <line x1="37" y1="75" x2="10" y2="65" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="33" y1="81" x2="6"  y2="71" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 108 108" fill="none"
+     stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Outer silhouette only — internal curves removed for legibility at small sizes -->
+  <path d="M53,13
+           C57,11 62,10 65,10
+           C75,16 86,33 92,46
+           C93,53 88,62 84,63
+           L66,57
+           C60,57 56,60 50,67
+           C47,67 41,65 38,65
+           L37,74
+           C33,79 25,80 20,77
+           L5,69
+           C8,59 15,56 27,51
+           C32,48 35,45 37,39
+           C40,33 42,27 50,19
+           C52,15 52,14 53,13 Z"/>
 </svg>

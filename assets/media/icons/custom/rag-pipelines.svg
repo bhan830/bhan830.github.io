@@ -1,37 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 70 70" fill="none"
      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
 
-  <!-- Back document (offset lower-left) -->
-  <rect x="2" y="14" width="34" height="46" rx="2" stroke-width="3"/>
+  <!-- Back document -->
+  <rect x="2" y="14" width="34" height="46" rx="2" stroke-width="2.5"/>
 
-  <!-- Front document body + folded corner -->
-  <path d="M10 4 H41 L50 13 V60 H10 Z" stroke-width="3"/>
-  <path d="M41 4 V13 H50" stroke-width="3"/>
+  <!-- Front document + folded corner -->
+  <path d="M10 4 H41 L50 13 V60 H10 Z" stroke-width="2.5"/>
+  <path d="M41 4 V13 H50" stroke-width="2.5"/>
 
-  <!-- Image placeholder box (top-left of front doc) -->
-  <rect x="14" y="9" width="11" height="11" rx="1" stroke-width="2.5"/>
+  <!-- Image box -->
+  <rect x="14" y="9" width="10" height="10" rx="1" stroke-width="2"/>
 
-  <!-- Bullet rows: small square + line -->
-  <rect x="14" y="26" width="4" height="4" rx="0.5" fill="currentColor" stroke="none"/>
-  <line x1="21" y1="28" x2="46" y2="28" stroke-width="2.5"/>
+  <!-- Bullet rows -->
+  <rect x="14" y="26" width="3.5" height="3.5" rx="0.5" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="27.5" x2="46" y2="27.5" stroke-width="2"/>
 
-  <rect x="14" y="34" width="4" height="4" rx="0.5" fill="currentColor" stroke="none"/>
-  <line x1="21" y1="36" x2="44" y2="36" stroke-width="2.5"/>
+  <rect x="14" y="33" width="3.5" height="3.5" rx="0.5" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="34.5" x2="44" y2="34.5" stroke-width="2"/>
 
-  <rect x="14" y="42" width="4" height="4" rx="0.5" fill="currentColor" stroke="none"/>
-  <line x1="21" y1="44" x2="45" y2="44" stroke-width="2.5"/>
+  <rect x="14" y="40" width="3.5" height="3.5" rx="0.5" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="41.5" x2="45" y2="41.5" stroke-width="2"/>
 
-  <rect x="14" y="50" width="4" height="4" rx="0.5" fill="currentColor" stroke="none"/>
-  <line x1="21" y1="52" x2="43" y2="52" stroke-width="2.5"/>
+  <rect x="14" y="47" width="3.5" height="3.5" rx="0.5" fill="currentColor" stroke="none"/>
+  <line x1="20" y1="48.5" x2="43" y2="48.5" stroke-width="2"/>
 
-  <!-- Magnifying glass: outer ring -->
-  <circle cx="44" cy="45" r="14" stroke-width="3.5"/>
+  <!-- Magnifying glass outer ring -->
+  <circle cx="44" cy="45" r="13" stroke-width="3"/>
   <!-- Inner ring -->
-  <circle cx="44" cy="45" r="9" stroke-width="3"/>
-  <!-- Lens glare highlight -->
-  <path d="M40 41 Q41.5 39 44 39" stroke-width="2"/>
+  <circle cx="44" cy="45" r="8.5" stroke-width="2.5"/>
 
-  <!-- Handle (rotated thick rectangle) -->
+  <!-- Handle -->
   <path d="M53 54 L57 50 L66 59 L62 63 Z"
-        fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        fill="currentColor" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
 </svg>
