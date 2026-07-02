@@ -100,6 +100,18 @@ section.hbb-section,
   overflow: visible !important;
 }
 
+/* Custom PNG icons (retrieval, list, xray) are black line art on transparent.
+   In dark mode, invert them so they appear white on the dark card background.
+   Brand/hero icons use <path> elements and are not matched by this selector. */
+.dark #skills svg image {
+  filter: invert(1);
+}
+
+/* MATLAB logo is full-color — skip inversion so it renders correctly in dark mode. */
+.dark #skills svg#matlab-icon image {
+  filter: none !important;
+}
+
 /* Full-width colored title bar, tracks active theme.
    calc(-50vw + 50%) breaks out of any centered container regardless of max-width.
    align-self: flex-start anchors the item to the container's left edge so the
