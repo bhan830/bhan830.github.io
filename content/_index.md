@@ -47,6 +47,8 @@ sections:
               icon: hero/circle-stack
             - name: JavaScript
               icon: brands/javascript
+            - name: VBA
+              icon: brands/microsoftexcel
         - name: AI & Machine Learning
           items:
             - name: PyTorch
