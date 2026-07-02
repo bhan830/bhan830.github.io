@@ -131,7 +131,7 @@ skills:
       - label: Synthetic Data Generation
       - label: TensorFlow
 
-  - name: Data & Medical Imaging
+  - name: Data & Health Informatics
     items:
       - label: OpenCV
       - label: NumPy / pandas

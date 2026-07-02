@@ -85,6 +85,20 @@ sections:
               icon: brands/git
             - name: Linux
               icon: brands/linux
+        - name: Engineering Software
+          items:
+            - name: Fusion 360
+              icon: devicon/fusion
+            - name: AutoCAD
+              icon: brands/autocad
+            - name: LabVIEW
+              icon: brands/labview
+            - name: COMSOL Multiphysics
+              icon: brands/comsol
+            - name: Onshape
+              icon: hero/cube
+            - name: SolidWorks
+              icon: brands/dassaultsystemes
     design:
       style: grid
 
