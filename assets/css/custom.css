@@ -157,7 +157,7 @@ section.hbb-section,
 .hb-social-btn::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: calc(100% + 8px);
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.8);
