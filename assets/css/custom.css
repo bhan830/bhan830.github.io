@@ -93,7 +93,7 @@ section.hbb-section,
 }
 
 .resume-biography {
-  padding-top: 1rem !important;
+  padding-top: 2.5rem !important;
 }
 
 /* tech-stack block adds py-16 to its outer container; zero the top half so the bar
