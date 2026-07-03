@@ -83,6 +83,19 @@ section.hbb-section,
   padding-top: 0 !important;
 }
 
+/* Bio/hero section only — id and class below are unique to the homepage's
+   resume-biography-3 block, so this can't leak into other pages. Two layers
+   stack here: the outer <section> gets .hbb-section's default
+   padding-top: 6rem, and the inner .resume-biography div adds its own
+   Tailwind py-* on top of that. Zero/shrink both. */
+#section-resume-biography-3 {
+  padding-top: 0 !important;
+}
+
+.resume-biography {
+  padding-top: 1rem !important;
+}
+
 /* tech-stack block adds py-16 to its outer container; zero the top half so the bar
    appears flush at the section boundary, matching the experience bar behaviour. */
 #skills .max-w-6xl {
