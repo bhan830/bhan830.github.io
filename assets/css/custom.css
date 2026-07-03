@@ -129,6 +129,13 @@ section.hbb-section,
   letter-spacing: 0.05em;
 }
 
+/* tech-stack's h2 is text-3xl sm:text-4xl in the vendor block, while
+   Experience/Education/Projects titles stay at text-3xl with no responsive
+   bump. Pin Skills to the same fixed size so all section titles match. */
+#skills h2 {
+  font-size: 1.875rem !important;
+}
+
 #projects .mb-6.text-3xl {
   align-self: flex-start;
   background-color: var(--color-primary-500);
