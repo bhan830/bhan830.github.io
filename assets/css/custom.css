@@ -83,35 +83,6 @@ section.hbb-section,
   padding-top: 0 !important;
 }
 
-/* Bio/hero section has two stacked top-padding layers: the outer <section>
-   carries .hbb-section's padding-top: 6rem (framework default section
-   spacing), and the inner .resume-biography div adds its own py-* on top of
-   that. Zeroing only the inner one (below) left the outer 6rem untouched,
-   which is why the first pass barely changed anything. Zero the section
-   wrapper's top padding here, same as #experience/#skills/#projects above. */
-#section-resume-biography-3 {
-  padding-top: 0 !important;
-}
-
-/* Bio/hero section: vendor's py-* scale applies equal top+bottom padding
-   (up to 8rem on xl), leaving a large gap below the navbar. Shrink just the
-   top side; leave bottom padding as-is to keep spacing before the next section. */
-.resume-biography {
-  padding-top: 1rem !important;
-}
-@media (min-width: 640px) {
-  .resume-biography { padding-top: 1.5rem !important; }
-}
-@media (min-width: 768px) {
-  .resume-biography { padding-top: 2rem !important; }
-}
-@media (min-width: 1024px) {
-  .resume-biography { padding-top: 2.5rem !important; }
-}
-@media (min-width: 1280px) {
-  .resume-biography { padding-top: 3rem !important; }
-}
-
 /* tech-stack block adds py-16 to its outer container; zero the top half so the bar
    appears flush at the section boundary, matching the experience bar behaviour. */
 #skills .max-w-6xl {
