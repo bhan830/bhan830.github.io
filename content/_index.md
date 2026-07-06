@@ -33,7 +33,7 @@ sections:
   - block: tech-stack
     id: skills
     content:
-      title: Skills and Expertise
+      title: Technical Skills
       categories:
         - name: Programming Languages
           items:
