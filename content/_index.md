@@ -105,7 +105,7 @@ sections:
   - block: collection
     id: projects
     content:
-      title: Selected Projects
+      title: Featured Projects
       filters:
         folders:
           - projects
