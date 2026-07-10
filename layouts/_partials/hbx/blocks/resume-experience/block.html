@@ -43,6 +43,7 @@
     {{ if reflect.IsMap . }}
       {{ $role := "" }}
       {{ $org := "" }}
+      {{ $location := "" }}
       {{ $start := "" }}
       {{ $end := "" }}
       {{ $summary := "" }}
@@ -56,6 +57,7 @@
       {{ if not $role }}{{ with index . "position" }}{{ $role = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
       {{ with index . "org" }}{{ $org = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ if not $org }}{{ with index . "company_name" }}{{ $org = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
+      {{ with index . "location" }}{{ $location = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ with index . "start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ if not $start }}{{ with index . "date_start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
       {{ with index . "end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -91,7 +93,7 @@
       {{ end }}
 
       {{ if or $role $org }}
-        {{ $experience = $experience | append (dict "role" $role "org" $org "start" $start "end" $end "summary" $summary "icon" $icon "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+        {{ $experience = $experience | append (dict "role" $role "org" $org "location" $location "start" $start "end" $end "summary" $summary "icon" $icon "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -202,35 +204,46 @@
             </div>
             
             {{/* Date badge */}}
-            <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <time>
-                {{ $start := index $item "start" }}
-                {{ $end := index $item "end" }}
-                {{ if $start }}
-                  {{ $parsed := try (time $start) }}
-                  {{ if not $parsed.Err }}
-                    {{ $parsed.Value | time.Format $date_format }} –
-                  {{ else }}
-                    {{ $start }} –
+            <div class="flex flex-col items-start sm:items-end gap-1 text-sm text-gray-500 dark:text-gray-400 shrink-0">
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <time>
+                  {{ $start := index $item "start" }}
+                  {{ $end := index $item "end" }}
+                  {{ if $start }}
+                    {{ $parsed := try (time $start) }}
+                    {{ if not $parsed.Err }}
+                      {{ $parsed.Value | time.Format $date_format }} –
+                    {{ else }}
+                      {{ $start }} –
+                    {{ end }}
                   {{ end }}
-                {{ end }}
-                {{ if $end }}
-                  {{ $parsed := try (time $end) }}
-                  {{ if not $parsed.Err }}
-                    {{ $parsed.Value | time.Format $date_format }}
+                  {{ if $end }}
+                    {{ $parsed := try (time $end) }}
+                    {{ if not $parsed.Err }}
+                      {{ $parsed.Value | time.Format $date_format }}
+                    {{ else }}
+                      {{ $end }}
+                    {{ end }}
                   {{ else }}
-                    {{ $end }}
-                  {{ end }}
-                {{ else }}
-                  <span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>
-                {{end}}
-              </time>
+                    <span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>
+                  {{end}}
+                </time>
+              </div>
+              {{ with index $item "location" }}
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                <span>{{ . }}</span>
+              </div>
+              {{ end }}
             </div>
           </div>
-          
+
           {{/* Description */}}
           {{ with index $item "summary" }}
           <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">

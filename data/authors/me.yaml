@@ -76,6 +76,7 @@ education:
 experience:
   - role: Jr. Quality Engineer
     org: Bio-Therapeutic
+    location: Seattle, WA
     start: September 2024
     summary: |
       -   Increased operational visibility across 1000+ purchasing orders and supply records by developing three interactive Tableau dashboards for inventory and procurement tracking
@@ -86,6 +87,7 @@ experience:
 
   - role: Lead Teaching Assistant
     org: UW Bioengineering Department
+    location: Seattle, WA
     start: January 2024
     end: June 2026
     summary: |
@@ -98,6 +100,7 @@ experience:
 
   - role: Engineering Services Intern
     org: UW Facilities
+    location: Seattle, WA
     start: September 2024
     end: June 2025
     summary: | 
@@ -108,6 +111,7 @@ experience:
 
   - role: Summerworks Engineering Intern
     org: City of Portland, Bureau of Environmental Services
+    location: Portland, OR
     start: June 2023
     end: August 2023
     summary: | 
