@@ -43,6 +43,8 @@ interests:
 education:
   - degree: Master of Applied Bioengineering
     institution: University of Washington
+    location: Seattle, WA
+    icon: custom/uw-logo
     start: September 2025
     end: June 2026
     gpa: "3.94"
@@ -56,6 +58,8 @@ education:
       - "INFO 340: Client-Side Development"
   - degree: "B.S. Bioengineering:<br>Data Science"
     institution: University of Washington
+    location: Seattle, WA
+    icon: custom/uw-logo
     start: September 2021
     end: June 2025
     gpa: "3.47"

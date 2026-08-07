@@ -113,6 +113,7 @@
     {{ if reflect.IsMap . }}
       {{ $degree := "" }}
       {{ $institution := "" }}
+      {{ $location := "" }}
       {{ $start := "" }}
       {{ $end := "" }}
       {{ $summary := "" }}
@@ -124,6 +125,7 @@
       {{ with index . "degree" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ if not $degree }}{{ with index . "area" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
       {{ with index . "institution" }}{{ $institution = strings.TrimSpace (printf "%v" .) }}{{ end }}
+      {{ with index . "location" }}{{ $location = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ with index . "start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}
       {{ if not $start }}{{ with index . "date_start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
       {{ with index . "end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -146,7 +148,7 @@
       {{ with index . "gpa" }}{{ $gpa = strings.TrimSpace (printf "%v" .) }}{{ end }}
 
       {{ if or $degree $institution }}
-        {{ $education = $education | append (dict "degree" $degree "institution" $institution "start" $start "end" $end "summary" $summary "icon" $icon "courses" $courses "gpa" $gpa "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+        {{ $education = $education | append (dict "degree" $degree "institution" $institution "location" $location "start" $start "end" $end "summary" $summary "icon" $icon "courses" $courses "gpa" $gpa "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -311,17 +313,35 @@
           
           {{/* Header row */}}
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
-            <div>
-              {{/* Degree */}}
-              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">
-                {{ index $item "degree" | safeHTML }}
-              </h3>
-              {{/* Institution */}}
-              <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
-                {{ index $item "institution" }}
-              </p>
+            <div class="flex items-start gap-3">
+              {{/* Institution logo */}}
+              {{ with index $item "icon" }}
+              <div class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-gray-50 dark:bg-white/[0.04] border border-gray-100 dark:border-white/[0.06] p-1.5">
+                {{ partial "functions/get_icon" (dict "name" . "attributes" "class='w-full h-full'") }}
+              </div>
+              {{ end }}
+              <div>
+                {{/* Degree */}}
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">
+                  {{ index $item "degree" | safeHTML }}
+                </h3>
+                {{/* Institution */}}
+                <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
+                  {{ index $item "institution" }}
+                </p>
+                {{/* Location */}}
+                {{ with index $item "location" }}
+                <p class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <span>{{ . }}</span>
+                </p>
+                {{ end }}
+              </div>
             </div>
-            
+
             {{/* Date badge */}}
             <div class="flex flex-col items-end gap-2 shrink-0">
               {{ with index $item "gpa" }}
