@@ -280,43 +280,6 @@
           {{ end }}
         </div>
 
-        {{/* Identity pills: location / open to / work authorization */}}
-        {{ $location := "" }}
-        {{ with $profile.location }}
-          {{ if eq (printf "%T" .) "string" }}{{ $location = strings.TrimSpace . }}{{ end }}
-        {{ end }}
-        {{ $open_to := "" }}
-        {{ with $profile.open_to }}
-          {{ if eq (printf "%T" .) "string" }}{{ $open_to = strings.TrimSpace . }}{{ end }}
-        {{ end }}
-        {{ $work_authorization := "" }}
-        {{ with $profile.work_authorization }}
-          {{ if eq (printf "%T" .) "string" }}{{ $work_authorization = strings.TrimSpace . }}{{ end }}
-        {{ end }}
-        {{ if or $location $open_to $work_authorization }}
-        {{ $pill_class := "inline-flex items-center gap-1.5 bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-sm font-medium px-3 py-1.5 rounded-full border border-primary-200/50 dark:border-primary-800/50" }}
-        <div class="flex flex-wrap justify-center gap-2">
-          {{ with $location }}
-          <span class="{{ $pill_class }}">
-            {{ partial "functions/get_icon" (dict "name" "hero/map-pin" "attributes" "class='w-4 h-4'") }}
-            {{ . }}
-          </span>
-          {{ end }}
-          {{ with $open_to }}
-          <span class="{{ $pill_class }}">
-            {{ partial "functions/get_icon" (dict "name" "hero/check-circle" "attributes" "class='w-4 h-4'") }}
-            {{ . }}
-          </span>
-          {{ end }}
-          {{ with $work_authorization }}
-          <span class="{{ $pill_class }}">
-            {{ partial "functions/get_icon" (dict "name" "hero/identification" "attributes" "class='w-4 h-4'") }}
-            {{ . }}
-          </span>
-          {{ end }}
-        </div>
-        {{ end }}
-
         {{/* Social Icons */}}
         {{ $links_raw := $profile.links }}
         {{ $links := slice }}
