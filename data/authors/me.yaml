@@ -11,11 +11,11 @@ name:
 postnominals: []
 status:
   icon: ""
-role: Jr. Quality Engineer @ Bio-Therapeutic
+role: Jr. Quality Engineer
 bio: |
   Hello! I'm a biomedical engineer specializing in AI-powered systems that integrate multimodal healthcare data across medical literature, structured databases, and medical imaging. I develop scalable machine learning and LLM-based solutions that transform complex biomedical data into accessible, actionable insights for clinicians and researchers.
-# affiliations:
-#   - name: University of Washington
+affiliations:
+  - name: Bio-Therapeutic
 #     url: https://www.washington.edu/
 links:
   - icon: at-symbol
