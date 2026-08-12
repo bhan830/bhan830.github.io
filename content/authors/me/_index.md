@@ -3,7 +3,7 @@ title: Benjamin Han
 first_name: Benjamin
 last_name: Han
 superuser: true
-role: Biomedical AI Engineer
+role: Jr. Quality Engineer @ Bio-Therapeutic
 organizations:
   - name: University of Washington
     url: https://www.washington.edu/
