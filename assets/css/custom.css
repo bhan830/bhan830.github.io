@@ -81,7 +81,7 @@ section.hbb-section,
 /* Extra bottom padding so, when snapped to Education, the "Technical Skills"
    header from the next section doesn't peek into view at the bottom of the viewport. */
 #education {
-  padding-bottom: 3.5rem;
+  padding-bottom: 3.75rem;
 }
 
 /* Remove top padding so the title bar sits flush at the section top */
