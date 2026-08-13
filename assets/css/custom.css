@@ -78,6 +78,12 @@ section.hbb-section,
   scroll-snap-align: start;
 }
 
+/* Extra bottom padding so, when snapped to Education, the "Technical Skills"
+   header from the next section doesn't peek into view at the bottom of the viewport. */
+#education {
+  padding-bottom: 8rem;
+}
+
 /* Remove top padding so the title bar sits flush at the section top */
 #experience, #skills, #projects {
   padding-top: 0 !important;
