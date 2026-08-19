@@ -78,6 +78,15 @@ section.hbb-section,
   scroll-snap-align: start;
 }
 
+/* The bio/hero section holds variable-height content (avatar, name, bio text,
+   interest tags, ...) that isn't guaranteed to fit one viewport — its rendered
+   height shifts with breakpoint and with mobile browsers' dynamic toolbar. Forcing
+   it to snap-align like the fixed-content sections below made the snap point land
+   in a different spot per device/toolbar state, so it's opted out here. */
+#section-resume-biography-3 {
+  scroll-snap-align: none;
+}
+
 /* Extra bottom padding so, when snapped to Education, the "Technical Skills"
    header from the next section doesn't peek into view at the bottom of the viewport. */
 #education {
@@ -98,8 +107,22 @@ section.hbb-section,
   padding-top: 0 !important;
 }
 
+/* Was a flat 10rem at every breakpoint, overriding the block's own responsive
+   py-* classes and pushing mobile content further below the fold than needed.
+   Scale it down to match how much clearance the (shorter, wrapping) navbar
+   actually needs on small screens. */
 .resume-biography {
-  padding-top: 10rem !important;
+  padding-top: 4rem !important;
+}
+@media (min-width: 768px) {
+  .resume-biography {
+    padding-top: 6rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  .resume-biography {
+    padding-top: 10rem !important;
+  }
 }
 
 /* tech-stack block adds py-16 to its outer container; zero the top half so the bar

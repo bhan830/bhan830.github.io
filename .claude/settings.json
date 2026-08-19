@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(hugo --quiet)",
-      "Bash(jobs)"
+      "Bash(jobs)",
+      "Bash(hugo --gc --minify)"
     ]
   }
 }
