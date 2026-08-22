@@ -118,18 +118,19 @@ body {
 /* Was a flat 10rem at every breakpoint, overriding the block's own responsive
    py-* classes and pushing mobile content further below the fold than needed.
    Scale it down to match how much clearance the (shorter, wrapping) navbar
-   actually needs on small screens. */
+   actually needs on small screens — kept tight so the avatar/name sit close
+   to the header instead of leaving a dead gap above them. */
 .resume-biography {
-  padding-top: 4rem !important;
+  padding-top: 1.5rem !important;
 }
 @media (min-width: 768px) {
   .resume-biography {
-    padding-top: 6rem !important;
+    padding-top: 2.5rem !important;
   }
 }
 @media (min-width: 1024px) {
   .resume-biography {
-    padding-top: 10rem !important;
+    padding-top: 4rem !important;
   }
 }
 
