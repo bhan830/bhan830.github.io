@@ -3,7 +3,22 @@
     "allow": [
       "Bash(hugo --quiet)",
       "Bash(jobs)",
-      "Bash(hugo --gc --minify)"
+      "Bash(hugo --gc --minify)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:1414/)",
+      "Bash(npm ls *)",
+      "Bash(find / -maxdepth 4 -iname \"*playwright*\")",
+      "Bash(xargs -I{} sh -c 'grep -l \"resume-biography\" {}')",
+      "Bash(python3 -c ' *)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(echo \"started pid $!\")",
+      "Bash(npx playwright *)",
+      "Bash(echo \"pid $!\")",
+      "Bash(node shot.js)",
+      "Bash(curl -s https://bhan830.github.io/ -o /tmp/live.html)",
+      "Bash(node scrolltest.js)",
+      "Bash(lsof -ti:1414 -sTCP:LISTEN)",
+      "Bash(git commit -m 'Disable scroll-snap below md breakpoint on homepage *)"
     ]
   }
 }
