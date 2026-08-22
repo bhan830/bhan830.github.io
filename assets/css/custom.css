@@ -66,25 +66,33 @@ body {
   background-color: transparent !important;
 }
 
-/* Scroll-snap: sections align to top of viewport, offset by navbar */
-html {
-  scroll-snap-type: y proximity;
-}
+/* Scroll-snap: sections align to top of viewport, offset by navbar.
+   Scoped to md+ only (matches the layout's own grid-cols-1 -> md:grid-cols-12
+   breakpoint). Below that, content stacks into a single tall column per section
+   and mobile browsers resize the visual viewport as their toolbar shows/hides —
+   both make "snap this section's top to the viewport top" land somewhere
+   different every time. Simplest fix: no snapping on small viewports at all,
+   just plain free scroll. */
+@media (min-width: 768px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
 
-/* scroll-margin-top removed: HugoBlox's hb-nav.js already sets scroll-padding-top
-   on the root element from the real navbar height — adding it here doubles the offset. */
-section.hbb-section,
-#education {
-  scroll-snap-align: start;
-}
+  /* scroll-margin-top removed: HugoBlox's hb-nav.js already sets scroll-padding-top
+     on the root element from the real navbar height — adding it here doubles the offset. */
+  section.hbb-section,
+  #education {
+    scroll-snap-align: start;
+  }
 
-/* The bio/hero section holds variable-height content (avatar, name, bio text,
-   interest tags, ...) that isn't guaranteed to fit one viewport — its rendered
-   height shifts with breakpoint and with mobile browsers' dynamic toolbar. Forcing
-   it to snap-align like the fixed-content sections below made the snap point land
-   in a different spot per device/toolbar state, so it's opted out here. */
-#section-resume-biography-3 {
-  scroll-snap-align: none;
+  /* The bio/hero section holds variable-height content (avatar, name, bio text,
+     interest tags, ...) that isn't guaranteed to fit one viewport even at md+ —
+     its rendered height shifts with breakpoint and bio/interests length. Forcing
+     it to snap-align like the fixed-content sections below made the snap point
+     land in a different spot per breakpoint, so it's opted out here too. */
+  #section-resume-biography-3 {
+    scroll-snap-align: none;
+  }
 }
 
 /* Extra bottom padding so, when snapped to Education, the "Technical Skills"
