@@ -18,7 +18,8 @@
       "Bash(curl -s https://bhan830.github.io/ -o /tmp/live.html)",
       "Bash(node scrolltest.js)",
       "Bash(lsof -ti:1414 -sTCP:LISTEN)",
-      "Bash(git commit -m 'Disable scroll-snap below md breakpoint on homepage *)"
+      "Bash(git commit -m 'Disable scroll-snap below md breakpoint on homepage *)",
+      "Bash(git commit -m 'Match Interests heading size to Professional Summary *)"
     ]
   }
 }
