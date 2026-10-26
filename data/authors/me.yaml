@@ -83,11 +83,13 @@ experience:
     location: Seattle, WA
     start: September 2024
     summary: |
-      -   Increased operational visibility across 1000+ purchasing orders and supply records by developing three interactive Tableau dashboards for inventory and procurement tracking
-      -   Reduced manual data entry effort and improved workflow by automating customer service logging workbooks and creating statistical reporting tools
-      -   Supported quality management reporting by collecting and analyzing statistical client data for internal management review
-      -   Conducted routine surveillance audits to ensure compliance with the Bio-Therapeutic Quality Management System
-      -   Mentored new interns on logging procedures, data analysis, and quality management practices to improve team efficiency and knowledge transfer
+      - Managing customer service and investigating customer complaints on product issues, contacting customers directly and creating RMA/CCR records to drive each case to closure
+      - Investigating nonconforming products and developing nonconformance reports to support disposition decisions
+      - Analyzing quality, procurement, and customer service data, including complaints, to identify continuous improvement opportunities and inform management decisions
+      - Conducting routine surveillance audits to verify compliance with internal quality standards and SOPs
+      - Building three interactive Tableau dashboards integrating 1,000+ purchase and supply records for quality reporting
+      - Automating customer service logging and reporting workflows in Excel/VBA, reducing manual data entry
+      - Mentored new interns on logging procedures, data analysis, and quality management practices to improve team efficiency and knowledge transfer
 
   - role: Lead Teaching Assistant
     org: UW Bioengineering Department
@@ -124,6 +126,15 @@ experience:
       - Annotated pump station schematics, creating structured engineering records that improved document traceability and facilitated future maintenance and infrastructure planning
 
 skills:
+  - name: Quality & Regulatory
+    items:
+      - label: Complaint Investigation
+      - label: Nonconformance Reporting
+      - label: Root-Cause Analysis
+      - label: CAPA
+      - label: Quality Data Trending
+      - label: ISO 13485
+
   - name: Programming Languages
     items:
       - label: Python

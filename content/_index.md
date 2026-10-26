@@ -35,6 +35,20 @@ sections:
     content:
       title: Technical Skills
       categories:
+        - name: Quality & Regulatory
+          items:
+            - name: Complaint Investigation
+              icon: hero/chat-bubble-left-right
+            - name: Nonconformance Reporting
+              icon: hero/exclamation-triangle
+            - name: Root-Cause Analysis
+              icon: hero/document-magnifying-glass
+            - name: CAPA
+              icon: hero/arrow-path
+            - name: Quality Data Trending
+              icon: hero/presentation-chart-line
+            - name: ISO 13485
+              icon: hero/shield-check
         - name: Programming Languages
           items:
             - name: Python
