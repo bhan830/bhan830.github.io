@@ -38,17 +38,17 @@ sections:
         - name: Quality & Regulatory
           items:
             - name: Complaint Investigation
-              icon: hero/chat-bubble-left-right
+              icon: hero/chat-bubble-left-right-solid
             - name: Nonconformance Reporting
-              icon: hero/exclamation-triangle
+              icon: hero/exclamation-triangle-solid
             - name: Root-Cause Analysis
-              icon: hero/document-magnifying-glass
+              icon: hero/document-magnifying-glass-solid
             - name: CAPA
-              icon: hero/arrow-path
+              icon: hero/arrow-path-solid
             - name: Quality Data Trending
-              icon: hero/presentation-chart-line
+              icon: hero/presentation-chart-line-solid
             - name: ISO 13485
-              icon: hero/shield-check
+              icon: hero/shield-check-solid
         - name: Programming Languages
           items:
             - name: Python
