@@ -44,7 +44,7 @@ CareChorus is a local-first, Flutter-based healthcare companion app that helps p
 ## Key Contributions
 
 - Built the document-processing evaluation CLI that replays CareChorus's production classify/extract/summarize flow against a corpus of real-world medical documents to validate output quality before release.
-- Implemented an LLM-as-judge quality assessment tool that flags structured extraction gaps (structural omissions, formatting loss, incorrect or missing fields) with severity ratings, turning ad hoc spot-checking into a human-reviewable process.
+- Implemented an LLM-as-judge quality assessment tool that flags structured extraction gaps (structural omissions, formatting loss, incorrect or missing fields)   with severity ratings, turning ad hoc spot-checking into a human-reviewable process.
 - Authored a ground-truth generation tool that produces independent Markdown transcriptions of source documents using a separate model from the extraction pipeline, enabling "apples-to-apples" fidelity comparisons.
 - Extended the evaluation framework into a Promptfoo-based suite of 17 automated assertions covering classification confidence, extraction completeness, date formatting, and summarization quality, achieving a 100% pass rate across a 17-document real-world medical record test set.
 - Maintained a standalone legacy evaluation script for offline and CI-driven pipeline validation, kept in sync with production prompt templates by importing them directly from the main app.
