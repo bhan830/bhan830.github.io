@@ -238,6 +238,15 @@ body {
    Header + headline stats row, then a two-column body: write-up on the left,
    sticky info card (role, timeline, partners, stack, links) on the right.
    ────────────────────────────────────────────────────────────────────────── */
+/* The theme sidebar only renders an empty 16rem spacer on desktop (it exists to
+   balance the TOC, which project pages don't use), pushing content off-center.
+   Hide it at lg+; below that it still hosts the mobile nav menu. */
+@media (min-width: 1024px) {
+  .proj-page .hb-sidebar-container {
+    display: none;
+  }
+}
+
 .proj-header {
   margin-bottom: 2rem;
 }
