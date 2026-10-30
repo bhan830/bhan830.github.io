@@ -340,7 +340,7 @@ body {
 
 @media (min-width: 1024px) {
   .proj-layout {
-    grid-template-columns: minmax(0, 1fr) 20rem;
+    grid-template-columns: minmax(0, 1fr) 22.5rem; /* wide enough for "Frameworks & Platforms" on one line */
     gap: 3.5rem;
     align-items: start;
   }
@@ -355,7 +355,6 @@ body {
 .proj-card {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
   padding: 1.5rem;
   border-radius: 0.75rem;
   background: color-mix(in srgb, var(--hb-color-background, #fff) 70%, transparent);
@@ -369,7 +368,14 @@ body {
 
 .proj-field {
   width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgb(229 231 235);
 }
+
+.proj-field:first-child { padding-top: 0; }
+.proj-field:last-child { padding-bottom: 0; border-bottom: none; }
+
+.dark .proj-field { border-bottom-color: rgb(55 65 81); }
 
 .proj-field-label {
   margin-bottom: 0.4rem;
