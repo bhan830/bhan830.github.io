@@ -270,28 +270,37 @@ body {
 .dark .proj-subtitle { color: rgb(156 163 175); }
 .dark .proj-lede { color: rgb(209 213 219); }
 
-/* Headline numbers */
+/* Headline numbers — flex-wrap so an odd tile left over on a wrapped row is centered */
 .proj-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
   margin: 0 0 3rem;
-}
-
-@media (min-width: 768px) {
-  .proj-stats {
-    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-    gap: 1rem;
-  }
 }
 
 .proj-stat {
   display: flex;
   flex-direction: column;
+  align-items: center; /* top-aligned so numbers line up across tiles with different label lengths */
+  text-align: center;
+  flex: 1 1 0;
+  min-width: 9rem;
+  max-width: calc(50% - 0.375rem); /* two per row on phones */
   padding: 1.25rem 1.25rem 1rem;
   border-radius: 0.75rem;
   background: color-mix(in srgb, var(--color-primary-500) 8%, transparent);
   border: 1px solid color-mix(in srgb, var(--color-primary-500) 20%, transparent);
+}
+
+@media (min-width: 768px) {
+  .proj-stats {
+    gap: 1rem;
+  }
+
+  .proj-stat {
+    max-width: none; /* all tiles share one row */
+  }
 }
 
 .proj-stat-value {
