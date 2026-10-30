@@ -340,7 +340,7 @@ body {
 
 @media (min-width: 1024px) {
   .proj-layout {
-    grid-template-columns: minmax(0, 1fr) 18rem;
+    grid-template-columns: minmax(0, 1fr) 20rem;
     gap: 3.5rem;
     align-items: start;
   }
@@ -372,10 +372,10 @@ body {
 }
 
 .proj-field-label {
-  margin-bottom: 0.35rem;
-  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem; /* uppercase caps read a step above the 1rem values beneath */
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgb(107 114 128);
 }
@@ -412,10 +412,10 @@ body {
 /* Inline (not flex) so the icon stays attached to the first word when a long label wraps */
 .proj-icon {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.35rem;
-  vertical-align: -0.15rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.4rem;
+  vertical-align: -0.2rem;
   color: var(--color-primary-500);
 }
 
