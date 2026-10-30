@@ -16,6 +16,22 @@ institution: University of Washington | Seattle, WA
 affiliation: UW Department of Neurosurgery, UW Harborview Medical Center
 start_date: 2025-09-01
 end_date: ''
+stats:
+  - value: "400+"
+    label: Clinician-style evaluation queries (up from 20)
+  - value: "20×"
+    label: Expansion of the LLM evaluation benchmark
+  - value: "$55K"
+    label: Funding secured from ITHS and UW Neurosurgery
+stack:
+  - group: Languages
+    items: [Python]
+  - group: AI & Machine Learning
+    items: [RAG, LLMs, Prompt Engineering, Synthetic Data Generation]
+  - group: Data & Evaluation
+    items: [Information Retrieval, LLM Evaluation, Data Processing Pipelines]
+  - group: Development
+    items: [Technical Documentation, SOPs, Cross-functional Collaboration]
 ---
 
 <video autoplay loop muted playsinline style="width:100%;border-radius:8px;">
@@ -33,12 +49,3 @@ WiseFind is an AI-powered clinical intelligence platform that integrates Retriev
 - Authored technical documentation and standard operating procedures (SOPs) to support reproducible development and onboarding of new contributors.
 - Contributed to technical planning and proposal development that helped secure **$55,000** in funding from the Institute of Translational Health Sciences (ITHS) and the University of Washington Department of Neurosurgery.
 
-## Technologies
-
-**Languages:** Python
-
-**AI & Machine Learning:** Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Prompt Engineering, Synthetic Data Generation
-
-**Data & Evaluation:** Information Retrieval, LLM Evaluation, Data Processing Pipelines
-
-**Development:** Technical Documentation, Standard Operating Procedures (SOPs), Cross-functional Collaboration

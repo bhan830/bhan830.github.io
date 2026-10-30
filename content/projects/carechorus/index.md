@@ -16,6 +16,27 @@ institution: University of Washington | Seattle, WA
 affiliation: UW Department of Bioengineering, CareChorus
 start_date: 2026-03-01
 end_date: 2026-06-30
+role: Evaluation Infrastructure Lead
+stats:
+  - value: "17"
+    label: Automated Promptfoo assertions
+  - value: "100%"
+    label: Pass rate on a 17-document real-world test set
+  - value: "15"
+    label: Clinical entity types covered
+  - value: "4"
+    label: LLMs evaluated via OpenRouter
+stack:
+  - group: Languages
+    items: [Dart]
+  - group: AI & Machine Learning
+    items: [LLMs, LLM Evaluation, LLM-as-a-Judge, Prompt Engineering, Structured Information Extraction]
+  - group: Frameworks & Platforms
+    items: [Flutter, Promptfoo, OpenRouter, Firebase]
+  - group: Models
+    items: [Claude Sonnet 4.5, GPT-5, GPT-5-mini, GPT-4o]
+  - group: Data & Evaluation
+    items: [Ground-Truth Generation, Automated Assertion Testing, Gap Analysis, Document Processing Pipelines]
 ---
 
 CareChorus is a local-first, Flutter-based healthcare companion app that helps patients and caregivers manage complex medical journeys. Its core AI pipeline ingests uploaded documents and photos (lab reports, discharge summaries, medication labels, imaging results) and runs them through a classify → extract → summarize flow across multiple LLMs to populate a schema-driven record of medications, conditions, providers, and appointments. This framework turns dense medical paperwork into structured, actionable data while keeping protected health information on-device. As eval infrastructure lead, I designed and built the testing and quality-assurance systems that validate this pipeline's accuracy before it ships to patients.
@@ -29,12 +50,3 @@ CareChorus is a local-first, Flutter-based healthcare companion app that helps p
 - Maintained a standalone legacy evaluation script for offline and CI-driven pipeline validation, kept in sync with production prompt templates by importing them directly from the main app.
 - Worked within CareChorus's schema-driven, plugin-extensible intake architecture (15 clinical entity types spanning medications, conditions, providers, and appointments) to ensure evaluation coverage scaled alongside new data types without pipeline rewrites.
 
-## Technologies
-
-**Languages:** Dart
-
-**AI & Machine Learning:** Large Language Models (LLMs), LLM Evaluation, LLM-as-a-Judge, Prompt Engineering, Structured Information Extraction
-
-**Frameworks & Platforms:** Flutter, Promptfoo, OpenRouter (Claude Sonnet 4.5, GPT-5, GPT-5-mini, GPT-4o), Firebase
-
-**Data & Evaluation:** Ground-Truth Generation, Automated Assertion Testing, Gap Analysis, Document Processing Pipelines

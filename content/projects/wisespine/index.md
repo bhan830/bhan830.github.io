@@ -15,6 +15,24 @@ institution: University of Washington | Seattle, WA
 affiliation: Amazon Web Services (AWS), UW Harborview Medical Center
 start_date: 2025-11-01
 end_date: ''
+stats:
+  - value: "30.1%"
+    label: Lower Cobb angle error from better ground truth
+  - value: "2–4×"
+    label: Larger gains from data prep than from architecture
+  - value: "481"
+    label: AP spinal X-rays analyzed
+  - value: "3"
+    label: Segmentation architectures compared
+stack:
+  - group: Languages
+    items: [Python]
+  - group: AI & Machine Learning
+    items: [PyTorch, nnU-Net 2D, Attention U-Net, UNet++, Watershed Segmentation, Data-Centric AI]
+  - group: Data & Evaluation
+    items: [Landmark-to-Mask Conversion, Ablation Studies, Cobb Angle Estimation, Regional & Severity Analysis]
+  - group: Infrastructure
+    items: [AWS, Medical Imaging Pipelines]
 ---
 
 WiseSpine is a data-centric AI pipeline for automated Cobb angle measurement from spine X-rays, demonstrating that data preparation choices, rather than model architecture, are the primary driver of clinical measurement accuracy. Using the AASCE MICCAI 2019 dataset of 481 AP spinal X-rays, the project converts sparse vertebral landmark annotations into dense segmentation ground truth and evaluates how those upstream decisions propagate to a clinical endpoint.
@@ -26,12 +44,3 @@ WiseSpine is a data-centric AI pipeline for automated Cobb angle measurement fro
 - Empirically tuned watershed distance threshold (14.6 px) via validation sweep, exposing that ±2 px variations propagate to clinically meaningful Cobb angle differences invisible to standard Dice metrics.
 - Collaborated with AWS engineers on scalable AI infrastructure design for medical imaging workloads.
 
-## Technologies
-
-**Languages:** Python
-
-**AI & Machine Learning:** PyTorch, Segmentation (nnU-Net 2D, Attention U-Net, UNet++), Watershed Segmentation, Data-Centric AI
-
-**Data & Evaluation:** Landmark-to-Mask Conversion, Ablation Studies, Cobb Angle Estimation, Regional & Severity Analysis
-
-**Infrastructure:** Amazon Web Services (AWS), Medical Imaging Pipelines
