@@ -139,14 +139,14 @@
           <div class="proj-card">
             {{ with .Params.role }}
             <div class="proj-field">
-              <div class="proj-field-label">Role</div>
+              <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" "hero/briefcase" "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>Role</span></div>
               <div class="proj-field-value">{{ . }}</div>
             </div>
             {{ end }}
 
             {{ with .Params.start_date }}
             <div class="proj-field">
-              <div class="proj-field-label">Timeline</div>
+              <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" "hero/calendar-days" "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>Timeline</span></div>
               <div class="proj-field-value">
                 {{ (time .) | time.Format "Jan 2006" }} – {{ with $.Params.end_date }}{{ (time .) | time.Format "Jan 2006" }}{{ else }}Present{{ end }}
               </div>
@@ -155,7 +155,7 @@
 
             {{ with .Params.institution }}
             <div class="proj-field">
-              <div class="proj-field-label">Organization</div>
+              <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" "hero/building-library" "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>Organization</span></div>
               {{ $parts := split . "|" }}
               <div class="proj-field-value">{{ strings.TrimSpace (index $parts 0) }}</div>
               {{ with after 1 $parts }}<div class="proj-field-sub">{{ delimit (apply . "strings.TrimSpace" ".") ", " }}</div>{{ end }}
@@ -164,7 +164,7 @@
 
             {{ with .Params.affiliation }}
             <div class="proj-field">
-              <div class="proj-field-label">Partners</div>
+              <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" "hero/user-group" "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>Partners</span></div>
               <ul class="proj-field-list">
                 {{ range split . "," }}<li>{{ strings.TrimSpace . }}</li>{{ end }}
               </ul>
@@ -172,10 +172,20 @@
             {{ end }}
 
             {{/* Stack: grouped `stack` param, falling back to flat `tags` */}}
+            {{/* Icon per stack group; a group can override with its own `icon:` (any Heroicons name) */}}
+            {{ $group_icons := dict
+              "Languages" "code-bracket"
+              "AI & Machine Learning" "cpu-chip"
+              "Data & Evaluation" "chart-bar"
+              "Infrastructure" "server-stack"
+              "Development" "wrench-screwdriver"
+              "Frameworks & Platforms" "squares-2x2"
+              "Models" "sparkles"
+            }}
             {{ if .Params.stack }}
               {{ range .Params.stack }}
               <div class="proj-field">
-                <div class="proj-field-label">{{ .group }}</div>
+                <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" (printf "hero/%s" (.icon | default (index $group_icons .group) | default "cube")) "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>{{ .group }}</span></div>
                 <ul class="proj-chips">
                   {{ range .items }}<li class="proj-chip">{{ . }}</li>{{ end }}
                 </ul>
@@ -183,7 +193,7 @@
               {{ end }}
             {{ else if .Params.tags }}
               <div class="proj-field">
-                <div class="proj-field-label">Stack</div>
+                <div class="proj-field-label">{{ partial "functions/get_icon" (dict "name" "hero/cube" "attributes" "class=\"proj-icon\" aria-hidden=\"true\"") }}<span>Stack</span></div>
                 <ul class="proj-chips">
                   {{ range .Params.tags }}<li class="proj-chip">{{ . }}</li>{{ end }}
                 </ul>
