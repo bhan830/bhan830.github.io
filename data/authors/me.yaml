@@ -186,7 +186,7 @@ skills:
       - name: Medical Imaging
         icon: custom/xray
 
-  - name: Cloud & Infrastructure
+  - name: Cloud & Developer Tools
     items:
       - name: AWS
         icon: brands/amazonwebservices
@@ -194,6 +194,12 @@ skills:
         icon: brands/git
       - name: Linux
         icon: brands/linux
+      - name: Firebase
+        icon: brands/firebase
+      - name: Flutter
+        icon: brands/flutter
+      - name: Promptfoo
+        icon: hero/beaker
 
   - name: Engineering Software
     items:

@@ -253,11 +253,6 @@ body {
     gap: clamp(0.5rem, 1.2vh, 1rem) !important;
   }
 
-  /* A three-item category stacks, so it fills its panel like the six-item ones */
-  #skills [data-stagger]:has(> :nth-child(3):last-child) {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   #skills .group {
     width: auto !important;
     padding: 0.25rem clamp(0.4375rem, 0.6vw, 0.75rem) !important;
