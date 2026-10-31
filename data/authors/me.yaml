@@ -128,42 +128,84 @@ experience:
 skills:
   - name: Quality & Regulatory
     items:
-      - label: Complaint Investigation
-      - label: Nonconformance Reporting
-      - label: Root-Cause Analysis
-      - label: CAPA
-      - label: Quality Data Trending
-      - label: ISO 13485
+      - name: Complaint Investigation
+        icon: hero/chat-bubble-left-right-solid
+      - name: Nonconformance Reporting
+        icon: hero/exclamation-triangle-solid
+      - name: Root-Cause Analysis
+        icon: hero/document-magnifying-glass-solid
+      - name: CAPA
+        icon: hero/arrow-path-solid
+      - name: Quality Data Trending
+        icon: hero/presentation-chart-line-solid
+      - name: ISO 13485
+        icon: hero/shield-check-solid
 
   - name: Programming Languages
     items:
-      - label: Python
-      - label: MATLAB
-      - label: R
-      - label: SQL
-      - label: JavaScript
+      - name: Python
+        icon: brands/python
+      - name: MATLAB
+        icon: custom/matlab
+      - name: R
+        icon: brands/r
+      - name: SQL
+        icon: hero/circle-stack
+      - name: JavaScript
+        icon: brands/javascript
+      - name: VBA
+        icon: brands/microsoftexcel
 
   - name: AI & Machine Learning
     items:
-      - label: PyTorch
-      - label: RAG Pipelines
-      - label: LLM Evaluation
-      - label: Prompt Engineering
-      - label: Synthetic Data Generation
-      - label: TensorFlow
+      - name: PyTorch
+        icon: brands/pytorch
+      - name: RAG Pipelines
+        icon: custom/rag-pipelines
+      - name: LLM Evaluation
+        icon: custom/llm-evaluation
+      - name: Prompt Engineering
+        icon: brands/openai
+      - name: Synthetic Data Generation
+        icon: hero/cpu-chip
+      - name: TensorFlow
+        icon: brands/tensorflow
 
   - name: Data Science & Health Informatics
     items:
-      - label: OpenCV
-      - label: NumPy / pandas
-      - label: scikit-learn
-      - label: Tableau
-      - label: Medical Imaging
+      - name: OpenCV
+        icon: brands/opencv
+      - name: NumPy
+        icon: brands/numpy
+      - name: pandas
+        icon: brands/pandas
+      - name: scikit-learn
+        icon: brands/scikitlearn
+      - name: Tableau
+        icon: brands/tableau
+      - name: Medical Imaging
+        icon: custom/xray
 
   - name: Cloud & Infrastructure
     items:
-      - label: AWS
-      - label: Git
-      - label: Linux
-    
+      - name: AWS
+        icon: brands/amazonwebservices
+      - name: Git
+        icon: brands/git
+      - name: Linux
+        icon: brands/linux
 
+  - name: Engineering Software
+    items:
+      - name: Fusion 360
+        icon: brands/autodesk
+      - name: AutoCAD
+        icon: brands/autocad
+      - name: LabVIEW
+        icon: custom/labview
+      - name: COMSOL Multiphysics
+        icon: hero/cube-transparent
+      - name: Onshape
+        icon: hero/cube
+      - name: SolidWorks
+        icon: brands/dassaultsystemes
