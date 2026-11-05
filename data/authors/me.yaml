@@ -171,7 +171,7 @@ skills:
       - name: TensorFlow
         icon: brands/tensorflow
 
-  - name: Data Science & Health Informatics
+  - name: Data and Health Informatics
     items:
       - name: OpenCV
         icon: brands/opencv
