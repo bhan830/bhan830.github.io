@@ -141,20 +141,20 @@ skills:
       - name: ISO 13485
         icon: hero/shield-check-solid
 
-  - name: Programming Languages
+  - name: Data and Health Informatics
     items:
-      - name: Python
-        icon: brands/python
-      - name: MATLAB
-        icon: custom/matlab
-      - name: R
-        icon: brands/r
-      - name: SQL
-        icon: hero/circle-stack
-      - name: JavaScript
-        icon: brands/javascript
-      - name: VBA
-        icon: brands/microsoftexcel
+      - name: OpenCV
+        icon: brands/opencv
+      - name: NumPy
+        icon: brands/numpy
+      - name: pandas
+        icon: brands/pandas
+      - name: scikit-learn
+        icon: brands/scikitlearn
+      - name: Tableau
+        icon: brands/tableau
+      - name: Medical Imaging
+        icon: custom/xray
 
   - name: AI & Machine Learning
     items:
@@ -171,35 +171,20 @@ skills:
       - name: TensorFlow
         icon: brands/tensorflow
 
-  - name: Data and Health Informatics
+  - name: Programming Languages
     items:
-      - name: OpenCV
-        icon: brands/opencv
-      - name: NumPy
-        icon: brands/numpy
-      - name: pandas
-        icon: brands/pandas
-      - name: scikit-learn
-        icon: brands/scikitlearn
-      - name: Tableau
-        icon: brands/tableau
-      - name: Medical Imaging
-        icon: custom/xray
-
-  - name: Cloud & Developer Tools
-    items:
-      - name: AWS
-        icon: brands/amazonwebservices
-      - name: Git
-        icon: brands/git
-      - name: Linux
-        icon: brands/linux
-      - name: Firebase
-        icon: brands/firebase
-      - name: Flutter
-        icon: brands/flutter
-      - name: Promptfoo
-        icon: hero/beaker
+      - name: Python
+        icon: brands/python
+      - name: MATLAB
+        icon: custom/matlab
+      - name: R
+        icon: brands/r
+      - name: SQL
+        icon: hero/circle-stack
+      - name: JavaScript
+        icon: brands/javascript
+      - name: VBA
+        icon: brands/microsoftexcel
 
   - name: Engineering Software
     items:
@@ -215,3 +200,18 @@ skills:
         icon: hero/cube
       - name: SolidWorks
         icon: brands/dassaultsystemes
+
+  - name: Cloud & Developer Tools
+    items:
+      - name: AWS
+        icon: brands/amazonwebservices
+      - name: Git
+        icon: brands/git
+      - name: Linux
+        icon: brands/linux
+      - name: Firebase
+        icon: brands/firebase
+      - name: Flutter
+        icon: brands/flutter
+      - name: Promptfoo
+        icon: hero/beaker
