@@ -13,7 +13,7 @@ status:
   icon: ""
 role: Jr. Quality Engineer
 bio: |
-  Hello! I'm a biomedical engineer with a background that bridges AI-powered healthcare systems withquality and process engineering. I develop machine learning and LLM-based solutions that transform complex, multimodal clinical data into actionable insights for clinicians and researchers, and I bring hands-on experience in compliance auditing, SOP development, and data driven process improvement within a regulated quality management system. Across both areas, I focus on building reliable tools, from AI pipelines and evaluation systems to automated dashboards and reporting workflows, that help professional teams make better decisions and work more efficiently.
+  Hello! I’m a quality engineer with a biomedical engineering background, working at the intersection of regulated quality systems and data science. As a Jr. Quality Engineer at a medical device company, I handle complaint investigations, nonconformance reporting, root-cause analysis, and internal audits within an ISO 13485 quality management system. I also build the data tools behind that work, including Tableau dashboards for quality reporting and automated Excel/VBA workflows that cut down manual data entry. My data science side carries the same mindset. On medical AI projects throughout my graduate studies, I’ve designed testing and validation pipelines, LLM evaluation systems, and segmentation benchmarks that check whether clinical AI tools perform reliably before anyone depends on them. Whether it’s a CAPA investigation or a model evaluation, I focus on making systems traceable, well documented, and supported by data.
 affiliations:
   - name: Bio-Therapeutic | Seattle, WA
 #     url: https://www.washington.edu/
