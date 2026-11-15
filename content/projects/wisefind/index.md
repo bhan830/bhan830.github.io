@@ -18,7 +18,7 @@ start_date: 2025-09-01
 end_date: ''
 stats:
   - value: "400+"
-    label: Clinician-style evaluation queries (up from 20)
+    label: Clinician-style evaluation queries
   - value: "20×"
     label: Expansion of the LLM evaluation benchmark
   - value: "$55K"
